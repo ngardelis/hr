@@ -1,0 +1,425 @@
+.App {
+    background-color: black;
+    color: white;
+    background-image: url("/home/atom/Desktop/hr/frontend/img/background.jpg");
+
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container .row:first-child {
+    width: 300px;
+    border-right: 5px solid #0F80C4;
+    background-color: black;
+}
+
+.container .row:last-child {
+    width: 100%;
+}
+
+.container .row:last-child .col:first-child {
+    height: 40px;
+    border-bottom: 5px solid #0F80C4;
+    background-color: black;
+}
+
+.active {
+    letter-spacing: 2px;
+    font-weight: bold;
+    /* background-color: #CF01D1; */
+    background-color: #0F80C4;
+
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.s-link {
+    color: white;
+}
+
+.s-logo {
+    font-size: 28px;
+    margin: 10px 2px 40px;
+    text-align: center;
+}
+
+.s-groups {
+    margin: 10px 7px;
+}
+
+.s-group {
+    margin: 30px 0px;
+}
+
+.s-group .s-link.active::before {
+    content: '\2666';
+}
+
+.s-group .s-link.active::after {
+    content: '\2666';
+}
+
+.l-container {
+    height: 100vh;
+}
+
+.l-container .l-row {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.l-container form {
+    width: 500px;
+    border: 1px solid #cccccc5f;
+    border-radius: 25px;
+}
+
+.l-groups {
+    padding: 0px 15px;
+}
+
+.l-title {
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0 40px 0px;
+}
+
+.l-group {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-group label {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.l-group input {
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.l-btn {
+    display: block;
+    width: max-content;
+    margin: 40px auto 15px auto;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.l-btn:hover {
+    background-color: #FBD680;
+}
+
+.d-title {
+    margin: 20px 40px;
+}
+
+.d-groups {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.d-group {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    box-shadow: 0 0 4px #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-badge {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px 20px;
+    background-color: #FBD680;
+    color: black;
+    font-weight: bold;
+    border-bottom-right-radius: 15px;
+}
+
+.d-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.d-content svg {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.d-content:hover svg {
+    color: #0F80C4;
+}
+
+/* For Charts */
+.d-row:nth-child(3) {
+    margin-bottom: 80px;
+}
+
+.d-row:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 85px;
+}
+
+.d-charts {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.d-chart {
+    width: 500px;
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+
+.d-chart:nth-child(2) {
+    height: 100%;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+/* Projects */
+.pr-container {
+    padding: 0 15px;
+    margin-top: 40px;
+}
+
+.t-container {
+    height: 100%;
+}
+
+.t-row {
+    height: 100%;
+}
+
+.t-link {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.t-settings,
+.t-logout {
+    color: #FBD680;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.l-container form {
+    background-color: black;
+}
+
+/* Users */
+.u-container {
+    padding: 15px 25px;
+}
+
+.u-row:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.u-btn {
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.u-btn:hover {
+    background-color: #FBD680;
+}
+
+/* Users Container */
+.quick-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: #0000001e;
+}
+
+.card-quick {
+    width: 600px;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+
+.card-row {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.back {
+    padding: 5px 25px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.add {
+    display: flex;
+    margin: 0 auto;
+    padding: 5px 15px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px #000000;
+    border-radius: 25px;
+}
+
+.add:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.card-flex:not(first-child) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-flex:first-child .card-row input {
+    width: 580px;
+}
+
+.card-row input {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 25px;
+}
+
+.card-row input:not(first-child) {
+    width: 250px;
+}
+
+.card-row select {
+    height: 30px;
+    width: 100%;
+}
+
+/* Activities */
+.a-container {
+    padding: 15px 25px;
+}
+
+.a-row:first-child {
+    margin-bottom: 50px;
+}
+
+.a-row {
+    margin-bottom: 50px;
+}
+
+.form {
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.form-group textarea {
+    width: 100%;
+}
+
+.p-btn {
+    display: block;
+    width: max-content;
+    margin: 40px auto 15px auto;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.p-btn:hover {
+    background-color: #FBD680;
+}
+
+.a-post {
+    margin-bottom: 50px;
+    padding: 10px;
+    border-bottom: 1px solid #FBD680;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.a-postTitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #FBD680;
+}
+
+.a-postDesc {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.a-postBody {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.a-postBody span {
+    font-weight: bold;
+    margin-left: 30px;
+}
+/* Events */
+.e-container {
+    padding: 15px 20px;
+    background-color: white;
+  }
+  
+  .e-title {
+    color: #000000a1;
+    letter-spacing: 3px;
+  }
+  
+  .e-row {
+    margin-bottom: 50px;
+  }
+
+/* Accounts */
+.u-row.accounts {
+    justify-content: flex-start;
+}
